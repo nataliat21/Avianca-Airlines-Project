@@ -1,0 +1,98 @@
+/* Set the main text color for the navigation bar to white */
+/* Header and navbar main color */
+/* Mixin that applies the flexbox property and modifies the value of the align property */
+/* General styles for the navigation bar */
+.navbar {
+  background-color: #ED0707;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  /* Styles for the left section of the navigation bar */
+  /* Styles for the right section of the navigation bar */
+  /* Styles for the right section of icons in the navigation bar */
+  /* Do not show the navigation bar icon container on mobile */
+}
+.navbar .navbar-left__section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 0px 15px 20px;
+  /* Styles for links within the left section */
+}
+.navbar .navbar-left__section .navbar__link--left {
+  margin: 10px;
+  text-decoration: none;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  /* Styles for icons within links */
+}
+.navbar .navbar-left__section .navbar__link--left:hover {
+  background-color: rgba(0, 0, 0, 0.39);
+  height: 100%;
+  border-radius: 10px;
+}
+.navbar .navbar-left__section .navbar__link--left .navbar__icon--left {
+  margin: 5px;
+}
+.navbar .navbar-right__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Styles for links within the right section */
+}
+.navbar .navbar-right__section .navbar__link--right {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 10px;
+}
+.navbar .navbar-right__section .navbar__link--right:hover {
+  border-bottom: 2px solid #FFFFFF;
+  font-weight: 700;
+}
+.navbar .navbar-right__icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Styles for the icons in the right section */
+}
+.navbar .navbar-right__icons .navbar__icon--right {
+  margin: 20px;
+}
+.navbar .navbar-right__icons .navbar__icon--right:hover {
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 5px;
+}
+.navbar .navbar__icons--mobile {
+  display: none;
+}
+
+/* End of the navegation bar */
+@media screen and (max-width: 320px) {
+  /* Styles for the navigation bar on mobile */
+  .navbar {
+    grid-template-columns: 1fr;
+    height: 50px;
+    /* Hide sections */
+    /* Styles for the icon container in the mobile navigation bar */
+  }
+  .navbar .navbar-left__section,
+  .navbar .navbar-right__section,
+  .navbar .navbar-right__icons {
+    display: none;
+  }
+  .navbar .navbar__icons--mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Styles for individual icons on mobile */
+  }
+  .navbar .navbar__icons--mobile .navbar__icon--mobile {
+    margin: 10px;
+  }
+  .navbar .navbar__icons--mobile .navbar__icon--mobile:hover {
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 5px;
+  }
+  /* End of the navbar section on mobile */
+}/*# sourceMappingURL=navbar.component.css.map */

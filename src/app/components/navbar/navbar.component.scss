@@ -1,0 +1,115 @@
+/* Set the main text color for the navigation bar to white */
+$navbar-section-text-primary-color: #FFFFFF;
+/* Header and navbar main color */
+$header-navbar-main-color: #ED0707;
+
+/* Mixin that applies the flexbox property and modifies the value of the align property */
+@mixin flex-align($align){
+  display: flex;
+  align-items: center;
+}
+
+/* General styles for the navigation bar */
+.navbar{
+  background-color: $header-navbar-main-color;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+
+  /* Styles for the left section of the navigation bar */
+  .navbar-left__section{
+    @include flex-align(center);
+    justify-content: flex-start;
+    padding: 15px 0px 15px 20px ;
+
+    /* Styles for links within the left section */
+    .navbar__link--left{
+      margin: 10px;
+      text-decoration: none;
+      color: $navbar-section-text-primary-color;
+      @include flex-align(center);
+
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.39);
+        height: 100%;
+        border-radius: 10px;
+      }
+
+      /* Styles for icons within links */
+      .navbar__icon--left{
+        margin: 5px;
+      }
+    }
+  }
+
+  /* Styles for the right section of the navigation bar */
+  .navbar-right__section{
+    @include flex-align(center);
+    justify-content: center;
+
+    /* Styles for links within the right section */
+    .navbar__link--right{
+      text-decoration: none;
+      color: $navbar-section-text-primary-color;
+      margin: 10px;
+
+      &:hover{
+        border-bottom: 2px solid #FFFFFF;
+        font-weight: 700;
+      }
+    }
+  }
+
+  /* Styles for the right section of icons in the navigation bar */
+  .navbar-right__icons{
+    @include flex-align(center);
+    justify-content: flex-end;
+
+    /* Styles for the icons in the right section */
+    .navbar__icon--right{
+      margin: 20px;
+
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.39);
+        border-radius: 5px;
+      }
+    }
+  }
+
+  /* Do not show the navigation bar icon container on mobile */
+  .navbar__icons--mobile{
+    display: none;
+  }
+}/* End of the navegation bar */
+
+@media screen and (max-width: 320px) {
+  /* Styles for the navigation bar on mobile */
+  .navbar{
+    grid-template-columns: 1fr;
+    height: 50px;
+
+    /* Hide sections */
+    .navbar-left__section,
+    .navbar-right__section,
+    .navbar-right__icons{
+      display: none;
+    }
+
+    /* Styles for the icon container in the mobile navigation bar */
+    .navbar__icons--mobile{
+      @include flex-align(center);
+      justify-content: flex-end;
+
+      /* Styles for individual icons on mobile */
+      .navbar__icon--mobile{
+        margin: 10px;
+
+        &:hover{
+          background-color: rgba(0, 0, 0, 0.39);
+          border-radius: 5px;
+        }
+      }
+    }
+  }/* End of the navbar section on mobile */
+}
+

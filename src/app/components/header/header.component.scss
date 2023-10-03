@@ -1,0 +1,38 @@
+@import '../navbar/navbar.component.scss';
+
+
+/* Styles for the main header block */
+.header{
+  background-color: $header-navbar-main-color;
+  height: 70px;
+
+  /* Styles for the logo element inside the header on desktop */
+  .header__logo--desktop{
+    padding: 15px 0px 15px 30px;
+  }
+
+  /* Styles for the logo element inside the header on mobile */
+  .header__logo--mobile{
+    display: none;
+  }
+
+}/*End of the main header*/
+
+@media screen and (max-width:320px) {
+  /* Styles for the header on mobile devices */
+  .header{
+    @include flex-align(center);
+    height: 50px;
+
+    /* Hide desktop logo */
+    .header__logo--desktop{
+      display: none;
+    }
+
+    /* Show the logo on mobile and adjust the spacing to the left */
+    .header__logo--mobile{
+      display: block;
+      padding-left: 20px;
+    }
+  }/*End of the header section on mobile */
+}
