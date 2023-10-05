@@ -90,6 +90,10 @@
   .navbar .navbar__icons--mobile .navbar__icon--mobile {
     margin: 10px;
   }
+  .navbar .navbar__icons--mobile .navbar__icon--mobile:hover {
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 5px;
+  }
   /* End of the navbar section on mobile */
 }
 /* Styles for the main header block */

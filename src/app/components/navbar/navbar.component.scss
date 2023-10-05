@@ -3,10 +3,17 @@ $navbar-section-text-primary-color: #FFFFFF;
 /* Header and navbar main color */
 $header-navbar-main-color: #ED0707;
 
+
 /* Mixin that applies the flexbox property and modifies the value of the align property */
 @mixin flex-align($align){
   display: flex;
   align-items: center;
+}
+
+/* Mixin to set background color and border radius*/
+@mixin set-background-color-and-border-radius($background-color, $border-radius){
+  background-color: $background-color;
+  border-radius: $border-radius;
 }
 
 /* General styles for the navigation bar */
@@ -17,38 +24,37 @@ $header-navbar-main-color: #ED0707;
   grid-template-columns: 1fr 1fr auto;
 
   /* Styles for the left section of the navigation bar */
-  .navbar-left__section{
+  .navbar-left{
     @include flex-align(center);
     justify-content: flex-start;
     padding: 15px 0px 15px 20px ;
 
     /* Styles for links within the left section */
-    .navbar__link--left{
+    .navbar-left__link{
       margin: 10px;
       text-decoration: none;
       color: $navbar-section-text-primary-color;
       @include flex-align(center);
 
       &:hover{
-        background-color: rgba(0, 0, 0, 0.39);
+        @include set-background-color-and-border-radius(rgba(0, 0, 0, 0.39), 10px);
         height: 100%;
-        border-radius: 10px;
       }
 
       /* Styles for icons within links */
-      .navbar__icon--left{
+      .navbar-left__icon{
         margin: 5px;
       }
     }
   }
 
   /* Styles for the right section of the navigation bar */
-  .navbar-right__section{
+  .navbar-right{
     @include flex-align(center);
     justify-content: center;
 
     /* Styles for links within the right section */
-    .navbar__link--right{
+    .navbar-right__link{
       text-decoration: none;
       color: $navbar-section-text-primary-color;
       margin: 10px;
@@ -61,23 +67,22 @@ $header-navbar-main-color: #ED0707;
   }
 
   /* Styles for the right section of icons in the navigation bar */
-  .navbar-right__icons{
+  .navbar-right-icons{
     @include flex-align(center);
     justify-content: flex-end;
 
     /* Styles for the icons in the right section */
-    .navbar__icon--right{
+    .navbar-right__icon{
       margin: 20px;
 
       &:hover{
-        background-color: rgba(0, 0, 0, 0.39);
-        border-radius: 5px;
+        @include set-background-color-and-border-radius(rgba(0, 0, 0, 0.39), 5px);
       }
     }
   }
 
   /* Do not show the navigation bar icon container on mobile */
-  .navbar__icons--mobile{
+  .navbar-mobile-icons{
     display: none;
   }
 }/* End of the navegation bar */
@@ -89,24 +94,23 @@ $header-navbar-main-color: #ED0707;
     height: 50px;
 
     /* Hide sections */
-    .navbar-left__section,
-    .navbar-right__section,
-    .navbar-right__icons{
+    .navbar-left,
+    .navbar-right,
+    .navbar-right-icons{
       display: none;
     }
 
     /* Styles for the icon container in the mobile navigation bar */
-    .navbar__icons--mobile{
+    .navbar-mobile-icons{
       @include flex-align(center);
       justify-content: flex-end;
 
       /* Styles for individual icons on mobile */
-      .navbar__icon--mobile{
+      .navbar-mobile__icon{
         margin: 10px;
 
         &:hover{
-          background-color: rgba(0, 0, 0, 0.39);
-          border-radius: 5px;
+          @include set-background-color-and-border-radius(rgba(0, 0, 0, 0.39), 5px);
         }
       }
     }

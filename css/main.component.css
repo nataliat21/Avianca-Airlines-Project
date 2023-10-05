@@ -1,0 +1,947 @@
+/* Set the main text color for the navigation bar to white */
+/* Header and navbar main color */
+/* Mixin that applies the flexbox property and modifies the value of the align property */
+/* Mixin to set background color and border radius*/
+/* General styles for the navigation bar */
+.navbar {
+  background-color: #ED0707;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  /* Styles for the left section of the navigation bar */
+  /* Styles for the right section of the navigation bar */
+  /* Styles for the right section of icons in the navigation bar */
+  /* Do not show the navigation bar icon container on mobile */
+}
+.navbar .navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 0px 15px 20px;
+  /* Styles for links within the left section */
+}
+.navbar .navbar-left .navbar-left__link {
+  margin: 10px;
+  text-decoration: none;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  /* Styles for icons within links */
+}
+.navbar .navbar-left .navbar-left__link:hover {
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 10px;
+  height: 100%;
+}
+.navbar .navbar-left .navbar-left__link .navbar-left__icon {
+  margin: 5px;
+}
+.navbar .navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Styles for links within the right section */
+}
+.navbar .navbar-right .navbar-right__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 10px;
+}
+.navbar .navbar-right .navbar-right__link:hover {
+  border-bottom: 2px solid #FFFFFF;
+  font-weight: 700;
+}
+.navbar .navbar-right-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Styles for the icons in the right section */
+}
+.navbar .navbar-right-icons .navbar-right__icon {
+  margin: 20px;
+}
+.navbar .navbar-right-icons .navbar-right__icon:hover {
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 5px;
+}
+.navbar .navbar-mobile-icons {
+  display: none;
+}
+
+/* End of the navegation bar */
+@media screen and (max-width: 320px) {
+  /* Styles for the navigation bar on mobile */
+  .navbar {
+    grid-template-columns: 1fr;
+    height: 50px;
+    /* Hide sections */
+    /* Styles for the icon container in the mobile navigation bar */
+  }
+  .navbar .navbar-left,
+  .navbar .navbar-right,
+  .navbar .navbar-right-icons {
+    display: none;
+  }
+  .navbar .navbar-mobile-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Styles for individual icons on mobile */
+  }
+  .navbar .navbar-mobile-icons .navbar-mobile__icon {
+    margin: 10px;
+  }
+  .navbar .navbar-mobile-icons .navbar-mobile__icon:hover {
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 5px;
+  }
+  /* End of the navbar section on mobile */
+}
+/*Mixin to set the position of an element*/
+/* Mixin to set border and border radius properties */
+/* Mixin to set font size and text alignment */
+/*Mixin to set background color and font color*/
+/* Mixin to set font size and font color*/
+/* This mixin sets the background color and padding of an element*/
+/* Mixin to set background color and border radius */
+/*Mixin to set flex direction and justification*/
+/* Style for the main element with class 'main' */
+.main {
+  /* Style for the promotional section */
+  /* End of promotional section */
+  /*Styles for tab navigation*/
+  /* End of tab navigation*/
+  /* Styles for the flight search section */
+  /*End of flight search section*/
+  /* Styles for the flight search mobile section  */
+  /*End of  flight search mobile section*/
+  /* Styles for the flight information block */
+  /*End of flight info section*/
+  /* Main container for flight cards */
+  /*End of flight cards section*/
+  /*Styles for the container that contains the button*/
+  /*End of more destinations section*/
+  /*Section styles everything you need to know*/
+  /*End of all you need to know section*/
+  /* Styles for the service cards section */
+  /*End of service cards section*/
+  /* Styles for the avianca section */
+  /*End of avianca section*/
+  /* Main nex experiences card container */
+  /*End of nex experiences card section*/
+}
+.main .promotional {
+  position: relative;
+  /* Style for the arrow icon container */
+  /*Hide the promotional image on mobile*/
+  /* Style for the promotional image */
+  /* Style for the promotional title */
+  /* Style for the promotional subtitle */
+  /* Style for the promotional description */
+  /* Style for the promotional button */
+  /* Style for the dot icon container */
+}
+.main .promotional .promotional__arrows {
+  position: absolute;
+  top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 999;
+  /* Style for arrow icons */
+}
+.main .promotional .promotional__arrows .promotional__icon {
+  margin: 20px;
+}
+.main .promotional .promotional__arrows .promotional__icon:hover {
+  background-color: rgba(0, 0, 0, 0.623);
+  border-radius: 30px;
+}
+.main .promotional .promotional__image--mobile {
+  display: none;
+}
+.main .promotional .promotional__image {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(20%);
+  -webkit-filter: brightness(80%);
+}
+.main .promotional .promotional__title {
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  font-size: 45px;
+  color: #FFFFFF;
+  font-family: "Signika Negative", sans-serif;
+}
+.main .promotional .promotional__subtitle {
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  color: #FFFFFF;
+}
+.main .promotional .promotional__description {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  color: #FFFFFF;
+}
+.main .promotional .promotional__button {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ED0707;
+  color: #FFFFFF;
+  padding: 15px 40px 15px 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+.main .promotional .promotional__button:hover {
+  background-color: rgba(0, 0, 0, 0.61);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #FFFFFF;
+}
+.main .promotional .promotional__dots {
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  border: 1px solid #FFFFFF;
+  border-radius: 30px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .tab-navigation {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 400px;
+  left: 20px;
+  /* Styles for tab navigation links*/
+  /* Special styles for the "Book your flight" navigation link*/
+}
+.main .tab-navigation .tab-navigation__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #dad9d9;
+  color: black;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin: 2px;
+}
+.main .tab-navigation .tab-navigation__link:hover {
+  background-color: black;
+  color: #FFFFFF;
+}
+.main .tab-navigation .tab-navigation__link--book-flight {
+  background-color: #FFFFFF;
+  color: #ED0707;
+  text-decoration: underline;
+  height: 25px;
+}
+.main .flight-search {
+  /* Styles for search options */
+  /* Styles for the question section */
+  /* Styles for the main destination container */
+}
+.main .flight-search .flight-search__options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 95%;
+  position: absolute;
+  top: 445px;
+  left: 22px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  padding: 20px 0px 20px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  /* Styles for the checkbox section */
+  /* Styles for the links section */
+}
+.main .flight-search .flight-search__options .flight-search__checkbox {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  /* Styles for the checkbox text */
+}
+.main .flight-search .flight-search__options .flight-search__checkbox .flight-search__text--checkbox {
+  margin-left: 5px;
+}
+.main .flight-search .flight-search__options .flight-search__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* Styles for individual links */
+}
+.main .flight-search .flight-search__options .flight-search__links .flight-search__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+  display: flex;
+  align-items: center;
+  /* Styles for the link icon */
+}
+.main .flight-search .flight-search__options .flight-search__links .flight-search__link .flight-search__icon {
+  margin: 5px;
+}
+.main .flight-search .flight-search__questions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 95%;
+  position: absolute;
+  top: 488px;
+  left: 22px;
+  background-color: #FFFFFF;
+  padding: 20px 0px 20px 20px;
+  cursor: pointer;
+  /* Styles for individual questions */
+  /* Styles for the question "Where are you traveling?" */
+  /* Styles for the question "When are you traveling?" */
+}
+.main .flight-search .flight-search__questions .flight-search__question {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.main .flight-search .flight-search__questions .flight-search__question--where {
+  margin-left: 20px;
+  margin-right: 180px;
+}
+.main .flight-search .flight-search__questions .flight-search__question--when {
+  margin-right: 170px;
+}
+.main .flight-search .flight-search__destination {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  background-color: #FFFFFF;
+  padding: 20px 0px 20px 20px;
+  position: absolute;
+  top: 543px;
+  left: 22px;
+  width: 95%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* Origin and destination section */
+  /* Departure and return section */
+  /* Passenger section */
+  /* Button section */
+}
+.main .flight-search .flight-search__destination .flight-search__destination-from-to {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  /* Styles for the origin and destination input fields */
+  /* Styles for icons */
+}
+.main .flight-search .flight-search__destination .flight-search__destination-from-to .flight-search__input--from-to {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 20px;
+  border: none;
+  border-bottom: 2px solid black;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.main .flight-search .flight-search__destination .flight-search__destination-from-to .flight-search__icon {
+  margin: 5px;
+}
+.main .flight-search .flight-search__destination .flight-search__destination-from-to .flight-search__icon--arrows {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.main .flight-search .flight-search__destination .flight-search__destination-departure-comeback {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  /* Styles for the departure and return field */
+  /* Styles for icons */
+}
+.main .flight-search .flight-search__destination .flight-search__destination-departure-comeback .flight-search__input--departure-comeback {
+  width: 100px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.main .flight-search .flight-search__destination .flight-search__destination-departure-comeback .flight-search__icon {
+  margin: 5px;
+}
+.main .flight-search .flight-search__destination .flight-search__destination-passengers {
+  display: flex;
+  align-items: center;
+  /* Styles for passenger text */
+  /* Styles for the passenger entry field */
+  /* Styles for icons */
+}
+.main .flight-search .flight-search__destination .flight-search__destination-passengers .flight-search__text--passenger {
+  margin-right: 10px;
+}
+.main .flight-search .flight-search__destination .flight-search__destination-passengers .flight-search__input--passenger {
+  width: 200px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.main .flight-search .flight-search__destination .flight-search__destination-passengers .flight-search__icon {
+  margin-left: 5px;
+}
+.main .flight-search .flight-search__destination .flight-search__destination-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+  /* Styles for the flight search button */
+}
+.main .flight-search .flight-search__destination .flight-search__destination-button .flight-search__button {
+  display: flex;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  background-color: #ED0707;
+  padding: 5px 30px;
+  font-weight: 700;
+  /* Styles for the button's hover state */
+}
+.main .flight-search .flight-search__destination .flight-search__destination-button .flight-search__button:hover {
+  background-color: rgba(0, 0, 0, 0.61);
+  transition: all 0.3s ease-in-out;
+}
+.main .flight-search-mobile {
+  display: none;
+}
+.main .flight-info {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* Styles for the flight title */
+}
+.main .flight-info .flight-info__title {
+  /* Styles for the link in the title */
+}
+.main .flight-info .flight-info__title .flight-info__link {
+  color: black;
+}
+.main .flight-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin: 10px;
+  /* Styles of each flight card */
+}
+.main .flight-cards .flight-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  /* Flight card image */
+  /* Text "Flights to" */
+  /* Flight card destination */
+  /* Text "By way from" */
+  /* Price of the flight card */
+}
+.main .flight-cards .flight-card:hover {
+  transform: translateY(-5px);
+}
+.main .flight-cards .flight-card .flight-card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: grayscale(5%);
+  -webkit-filter: brightness(90%);
+}
+.main .flight-cards .flight-card .flight-card__text--flight {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.main .flight-cards .flight-card .flight-card__destination {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  color: #FFFFFF;
+}
+.main .flight-cards .flight-card .flight-card__text--journey {
+  padding-left: 10px;
+}
+.main .flight-cards .flight-card .flight-card__price {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  /* Flight card price icon */
+}
+.main .flight-cards .flight-card .flight-card__price .flight-card__price--icon {
+  margin-left: 20px;
+}
+.main .more-destinations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.main .more-destinations .more-destinations__button {
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ED0707;
+  padding: 10px 40px;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+}
+.main .more-destinations .more-destinations__button:hover {
+  background-color: rgba(0, 0, 0, 0.61);
+  transition: all 0.3s ease-in-out;
+}
+.main .all-you-need-to-know {
+  background-color: #dad9d9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+.main .service-cards {
+  display: flex;
+  align-items: center;
+  background-color: #dad9d9;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  /* Styles for each service card */
+}
+.main .service-cards .service-card {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  /* Styles for the card image */
+  /* Styles for the card title */
+  /* Styles for the card text */
+  /* Styles for the "Know More" text on the card */
+}
+.main .service-cards .service-card:hover {
+  transform: translateY(-5px);
+}
+.main .service-cards .service-card .service-card__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.main .service-cards .service-card .service-card__title {
+  margin: 10px 10px;
+}
+.main .service-cards .service-card .service-card__text {
+  margin: 5px 10px;
+}
+.main .service-cards .service-card .service-card__text--know-more {
+  font-size: 14px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 30px 10px;
+  font-weight: 700;
+  /* Styles for the "Know More" text icon */
+}
+.main .service-cards .service-card .service-card__text--know-more:hover {
+  text-decoration: underline;
+}
+.main .service-cards .service-card .service-card__text--know-more .service-card__icon {
+  margin-left: 5px;
+}
+.main .avianca {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .new-experiences-cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  /* Styles for each individual card */
+}
+.main .new-experiences-cards .new-experiences-card {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  /* Styles for the card image */
+  /* Styles for the card title */
+  /* Styles for the card text */
+  /* Styles for the card link */
+}
+.main .new-experiences-cards .new-experiences-card:hover {
+  transform: translateY(-5px);
+}
+.main .new-experiences-cards .new-experiences-card .new-experiences-card__image {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.main .new-experiences-cards .new-experiences-card .new-experiences-card__title {
+  margin: 10px 10px;
+}
+.main .new-experiences-cards .new-experiences-card .new-experiences-card__text {
+  margin: 10px 10px;
+}
+.main .new-experiences-cards .new-experiences-card .new-experiences-card__text--apply {
+  margin: 10px 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  /* Styles for the icon inside the link */
+}
+.main .new-experiences-cards .new-experiences-card .new-experiences-card__text--apply .new-experiences-card__icon {
+  margin-left: 5px;
+}
+
+/* End of main section */
+@media screen and (max-width: 320px) {
+  .main {
+    /* Styles for the promotional section on mobile */
+    /*End of the mobile promotional section */
+    /* Styles for tab navigation section on mobile */
+    /*End of the mobile tab navigation section*/
+    /* Styles for flight search section on mobile */
+    /*End of the mobile flight search section*/
+    /* Styles for the flight search on mobile devices */
+    /* End of flight search on mobile devices */
+    /* Styles for the flight info on mobile devices */
+    /* End of flight info on mobile devices */
+    /* Styles for the flight cards on mobile devices */
+    /* End of flight cards on mobile devices */
+    /*Section styles everything you need to know on mobile*/
+    /*End of the section of everything you need to know about the mobile*/
+    /* Styles for the service card section on mobile */
+    /* End of service cards on mobile devices */
+    /* Styles for the avianca section on mobile */
+    /* End of avianca on mobile devices */
+    /* Main card container on mobile */
+    /* End of new experiences cards on mobile devices */
+  }
+  .main .promotional {
+    position: relative;
+    /* Hide the following elements on mobile */
+    /* Styles for the promotional image on mobile*/
+    /* Styles for the promotional title on mobile */
+    /* Styles for the promotional subtitle on mobile */
+    /* Styles for the promotional button on mobile */
+    /* Styles for the dot icon container on mobile */
+  }
+  .main .promotional .promotional__arrows,
+  .main .promotional .promotional__image,
+  .main .promotional .promotional__description {
+    display: none;
+  }
+  .main .promotional .promotional__image--mobile {
+    display: block;
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: grayscale(30%);
+    -webkit-filter: brightness(80%);
+  }
+  .main .promotional .promotional__title {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+  }
+  .main .promotional .promotional__subtitle {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .main .promotional .promotional__button {
+    position: absolute;
+    top: 200px;
+    left: 75px;
+  }
+  .main .promotional .promotional__dots {
+    border: none;
+    border-radius: 0px;
+    /* Styles for the dot icon on mobile */
+  }
+  .main .promotional .promotional__dots .promotional__icon {
+    stroke: #FFFFFF;
+    width: 40px;
+    height: 40px;
+  }
+  .main .tab-navigation {
+    display: none;
+  }
+  .main .flight-search {
+    display: none;
+  }
+  .main .flight-search-mobile {
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+    position: absolute;
+    top: 370px;
+    left: 10px;
+    right: 10px;
+    z-index: 2;
+    /* Styles for the reservation area on mobile */
+    /* Styles for the checkbox container on mobile */
+    /* Styles for the lookup table container on mobile */
+    /* Styles for the promotional code on mobile */
+    /* Styles for the search button container on mobile */
+    /* Styles for the navigation menu on mobile */
+    /* Styles for the container for tab navigation on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__booking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /* Styles for the reservation link on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__booking .flight-search-mobile__booking-link {
+    text-decoration: none;
+    color: #ED0707;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    /* Styles for the reservation icon on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__booking .flight-search-mobile__booking-link .flight-search-mobile__booking-icon {
+    margin-left: 5px;
+  }
+  .main .flight-search-mobile .flight-search-mobile__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    /* Styles for checkbox text on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__checkbox .flight-search-mobile__checkbox-text {
+    padding-right: 10px;
+  }
+  .main .flight-search-mobile .flight-search-mobile__table {
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    /* Styles for the table on mobile */
+    /* Styles for the table icon on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__table .flight-search-mobile__table-table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #dad9d9;
+    border-radius: 5px;
+    margin: 5px;
+    /* Styles for table rows on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__table .flight-search-mobile__table-table tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    /* Styles for table cells on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__table .flight-search-mobile__table-table tr .flight-search-mobile__table-cells {
+    flex: 1;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    border: 1px solid rgba(161, 159, 159, 0.363);
+  }
+  .main .flight-search-mobile .flight-search-mobile__table .flight-search-mobile__table-icon {
+    /* Styles for the SVG icon on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__table .flight-search-mobile__table-icon .flight-search-mobile__table-icon-svg {
+    position: absolute;
+    top: 17px;
+    left: 133px;
+  }
+  .main .flight-search-mobile .flight-search-mobile__promotional-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Styles for the promo code link on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__promotional-code .flight-search-mobile__promotional-code-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    padding-bottom: 15px;
+  }
+  .main .flight-search-mobile .flight-search-mobile__promotional-code .flight-search-mobile__promotional-code-link:hover {
+    text-decoration: underline;
+  }
+  .main .flight-search-mobile .flight-search-mobile__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    /* Styles for the search button on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__search .flight-search-mobile__search-button {
+    background-color: #ED0707;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  .main .flight-search-mobile .flight-search-mobile__search .flight-search-mobile__search-button:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.877);
+  }
+  .main .flight-search-mobile .flight-search-mobile__menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* Styles for navigation menu links on mobile*/
+  }
+  .main .flight-search-mobile .flight-search-mobile__menu .flight-search-mobile__menu-link {
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+  }
+  .main .flight-search-mobile .flight-search-mobile__tab-navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px 0px 10px;
+    /* Styles for tab navigation links on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__tab-navigation .flight-search-mobile__tab-navigation-link {
+    background-color: #dad9d9;
+    padding: 10px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    width: 100%;
+    /* Styles for the tab navigation icon on mobile */
+  }
+  .main .flight-search-mobile .flight-search-mobile__tab-navigation .flight-search-mobile__tab-navigation-link:hover {
+    background-color: rgba(218, 217, 217, 0.5960784314);
+  }
+  .main .flight-search-mobile .flight-search-mobile__tab-navigation .flight-search-mobile__tab-navigation-link .flight-search-mobile__tab-navigation-icon {
+    margin-left: 5px;
+  }
+  .main .flight-info {
+    margin-top: 500px;
+    /* Styles for the flight information title on mobile */
+    /* Styles for the title description on mobile */
+  }
+  .main .flight-info .flight-info__title {
+    text-align: center;
+  }
+  .main .flight-info .flight-info__description {
+    text-align: center;
+  }
+  .main .flight-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5px;
+  }
+  .main .all-you-need-to-know {
+    /*Paragraph styles on mobile */
+  }
+  .main .all-you-need-to-know .all-you-need-to-know__description {
+    text-align: center;
+  }
+  .main .service-cards {
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    /* Styles for each service card on mobile */
+  }
+  .main .service-cards .service-card {
+    margin: 5px;
+    width: 290px;
+  }
+  .main .avianca {
+    /* Styles for the title and text of the Avianca section on mobile devices*/
+  }
+  .main .avianca .avianca__title,
+  .main .avianca .avianca__text {
+    text-align: center;
+  }
+  .main .new-experiences-cards {
+    flex-direction: column;
+    padding: 0px;
+    margin: 10px;
+    /* Styles for each individual card on mobile */
+  }
+  .main .new-experiences-cards .new-experiences-card {
+    width: 100%;
+    margin: 20px 0px;
+    height: 100%;
+  }
+}/*# sourceMappingURL=main.component.css.map */
