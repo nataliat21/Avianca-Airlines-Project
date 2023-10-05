@@ -97,6 +97,105 @@
   }
   /* End of the navbar section on mobile */
 }
+/* Set the main text color for the navigation bar to white */
+/* Header and navbar main color */
+/* Mixin that applies the flexbox property and modifies the value of the align property */
+/* Mixin to set background color and border radius*/
+/* General styles for the navigation bar */
+.navbar {
+  background-color: #ED0707;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  /* Styles for the left section of the navigation bar */
+  /* Styles for the right section of the navigation bar */
+  /* Styles for the right section of icons in the navigation bar */
+  /* Do not show the navigation bar icon container on mobile */
+}
+.navbar .navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 0px 15px 20px;
+  /* Styles for links within the left section */
+}
+.navbar .navbar-left .navbar-left__link {
+  margin: 10px;
+  text-decoration: none;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  /* Styles for icons within links */
+}
+.navbar .navbar-left .navbar-left__link:hover {
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 10px;
+  height: 100%;
+}
+.navbar .navbar-left .navbar-left__link .navbar-left__icon {
+  margin: 5px;
+}
+.navbar .navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Styles for links within the right section */
+}
+.navbar .navbar-right .navbar-right__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 10px;
+}
+.navbar .navbar-right .navbar-right__link:hover {
+  border-bottom: 2px solid #FFFFFF;
+  font-weight: 700;
+}
+.navbar .navbar-right-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Styles for the icons in the right section */
+}
+.navbar .navbar-right-icons .navbar-right__icon {
+  margin: 20px;
+}
+.navbar .navbar-right-icons .navbar-right__icon:hover {
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 5px;
+}
+.navbar .navbar-mobile-icons {
+  display: none;
+}
+
+/* End of the navegation bar */
+@media screen and (max-width: 320px) {
+  /* Styles for the navigation bar on mobile */
+  .navbar {
+    grid-template-columns: 1fr;
+    height: 50px;
+    /* Hide sections */
+    /* Styles for the icon container in the mobile navigation bar */
+  }
+  .navbar .navbar-left,
+  .navbar .navbar-right,
+  .navbar .navbar-right-icons {
+    display: none;
+  }
+  .navbar .navbar-mobile-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Styles for individual icons on mobile */
+  }
+  .navbar .navbar-mobile-icons .navbar-mobile__icon {
+    margin: 10px;
+  }
+  .navbar .navbar-mobile-icons .navbar-mobile__icon:hover {
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 5px;
+  }
+  /* End of the navbar section on mobile */
+}
 /*Mixin to set the position of an element*/
 /* Mixin to set border and border radius properties */
 /* Mixin to set font size and text alignment */
@@ -647,9 +746,6 @@
   align-items: center;
   /* Styles for the icon inside the link */
 }
-.main .new-experiences-cards .new-experiences-card .new-experiences-card__text--apply:hover {
-  text-decoration: underline;
-}
 .main .new-experiences-cards .new-experiences-card .new-experiences-card__text--apply .new-experiences-card__icon {
   margin-left: 5px;
 }
@@ -947,4 +1043,230 @@
     margin: 20px 0px;
     height: 100%;
   }
-}/*# sourceMappingURL=main.component.css.map */
+}
+.footer {
+  /* Style definition for the 'line' class */
+  /* Style definition for the 'links' class container */
+  /* End of the links container*/
+  /* Style for class 'copyright-social-media' */
+  /* End of the copyright social media container*/
+}
+.footer .line {
+  border: 1px solid rgba(194, 187, 187, 0.425);
+  width: 87%;
+  text-align: center;
+}
+.footer .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  margin-bottom: 20px;
+  /* Styles for internal element classes: 'additional-services', 'about', 'useful-information' and 'quick-links' */
+}
+.footer .links .additional-services,
+.footer .links .about,
+.footer .links .useful-information,
+.footer .links .quick-links {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Styles for section titles */
+  /* Styles for section links */
+}
+.footer .links .additional-services .additional-services__title,
+.footer .links .additional-services .about__title,
+.footer .links .additional-services .useful-information__title,
+.footer .links .additional-services .quick-links__title,
+.footer .links .about .additional-services__title,
+.footer .links .about .about__title,
+.footer .links .about .useful-information__title,
+.footer .links .about .quick-links__title,
+.footer .links .useful-information .additional-services__title,
+.footer .links .useful-information .about__title,
+.footer .links .useful-information .useful-information__title,
+.footer .links .useful-information .quick-links__title,
+.footer .links .quick-links .additional-services__title,
+.footer .links .quick-links .about__title,
+.footer .links .quick-links .useful-information__title,
+.footer .links .quick-links .quick-links__title {
+  color: #ED0707;
+  font-size: 15px;
+}
+.footer .links .additional-services .additional-services__link,
+.footer .links .additional-services .about__link,
+.footer .links .additional-services .useful-information__link,
+.footer .links .additional-services .quick-links__link,
+.footer .links .about .additional-services__link,
+.footer .links .about .about__link,
+.footer .links .about .useful-information__link,
+.footer .links .about .quick-links__link,
+.footer .links .useful-information .additional-services__link,
+.footer .links .useful-information .about__link,
+.footer .links .useful-information .useful-information__link,
+.footer .links .useful-information .quick-links__link,
+.footer .links .quick-links .additional-services__link,
+.footer .links .quick-links .about__link,
+.footer .links .quick-links .useful-information__link,
+.footer .links .quick-links .quick-links__link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 8px;
+  transition: transform 0.3s;
+}
+.footer .links .additional-services .additional-services__link:hover,
+.footer .links .additional-services .about__link:hover,
+.footer .links .additional-services .useful-information__link:hover,
+.footer .links .additional-services .quick-links__link:hover,
+.footer .links .about .additional-services__link:hover,
+.footer .links .about .about__link:hover,
+.footer .links .about .useful-information__link:hover,
+.footer .links .about .quick-links__link:hover,
+.footer .links .useful-information .additional-services__link:hover,
+.footer .links .useful-information .about__link:hover,
+.footer .links .useful-information .useful-information__link:hover,
+.footer .links .useful-information .quick-links__link:hover,
+.footer .links .quick-links .additional-services__link:hover,
+.footer .links .quick-links .about__link:hover,
+.footer .links .quick-links .useful-information__link:hover,
+.footer .links .quick-links .quick-links__link:hover {
+  text-decoration: underline;
+  transform: translateX(-5px);
+}
+.footer .copyright-social-media {
+  background-color: #dad9d9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  /* Style for the 'copyright' class */
+  /* Style for the 'social-media' class */
+}
+.footer .copyright-social-media .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Style for copyright text */
+}
+.footer .copyright-social-media .copyright .copyright__text {
+  font-size: 12px;
+}
+.footer .copyright-social-media .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Style for social media icons */
+}
+.footer .copyright-social-media .social-media .social-media__icon {
+  margin: 5px;
+}
+.footer .copyright-social-media .social-media .social-media__icon:hover {
+  background-color: #ED0707;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    /* Style for class 'line' on mobile devices */
+    /* Style for the 'links' on mobile devices container */
+    /* End of the links container on mobile devices*/
+    /* Style for copyright social media container on mobile devices */
+    /* End of the copyright social media container on mobile devices*/
+  }
+  .footer .line {
+    width: 90%;
+  }
+  .footer .links {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 10px;
+    /* Style for internal element classes: 'additional-services', 'about', 'useful-information' and 'quick-links' on mobile devices */
+  }
+  .footer .links .additional-services,
+  .footer .links .about,
+  .footer .links .useful-information,
+  .footer .links .quick-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #dad9d9;
+    margin: 5px;
+    width: 100%;
+    /* Style for on mobile section titles */
+    /* Style for the links of the on mobile sections */
+  }
+  .footer .links .additional-services .additional-services__title,
+  .footer .links .additional-services .about__title,
+  .footer .links .additional-services .useful-information__title,
+  .footer .links .additional-services .quick-links__title,
+  .footer .links .about .additional-services__title,
+  .footer .links .about .about__title,
+  .footer .links .about .useful-information__title,
+  .footer .links .about .quick-links__title,
+  .footer .links .useful-information .additional-services__title,
+  .footer .links .useful-information .about__title,
+  .footer .links .useful-information .useful-information__title,
+  .footer .links .useful-information .quick-links__title,
+  .footer .links .quick-links .additional-services__title,
+  .footer .links .quick-links .about__title,
+  .footer .links .quick-links .useful-information__title,
+  .footer .links .quick-links .quick-links__title {
+    transition: transform 0.3s;
+  }
+  .footer .links .additional-services .additional-services__title:hover,
+  .footer .links .additional-services .about__title:hover,
+  .footer .links .additional-services .useful-information__title:hover,
+  .footer .links .additional-services .quick-links__title:hover,
+  .footer .links .about .additional-services__title:hover,
+  .footer .links .about .about__title:hover,
+  .footer .links .about .useful-information__title:hover,
+  .footer .links .about .quick-links__title:hover,
+  .footer .links .useful-information .additional-services__title:hover,
+  .footer .links .useful-information .about__title:hover,
+  .footer .links .useful-information .useful-information__title:hover,
+  .footer .links .useful-information .quick-links__title:hover,
+  .footer .links .quick-links .additional-services__title:hover,
+  .footer .links .quick-links .about__title:hover,
+  .footer .links .quick-links .useful-information__title:hover,
+  .footer .links .quick-links .quick-links__title:hover {
+    color: black;
+    text-decoration: underline;
+    transform: translateX(-5px);
+  }
+  .footer .links .additional-services .additional-services__link,
+  .footer .links .additional-services .about__link,
+  .footer .links .additional-services .useful-information__link,
+  .footer .links .additional-services .quick-links__link,
+  .footer .links .about .additional-services__link,
+  .footer .links .about .about__link,
+  .footer .links .about .useful-information__link,
+  .footer .links .about .quick-links__link,
+  .footer .links .useful-information .additional-services__link,
+  .footer .links .useful-information .about__link,
+  .footer .links .useful-information .useful-information__link,
+  .footer .links .useful-information .quick-links__link,
+  .footer .links .quick-links .additional-services__link,
+  .footer .links .quick-links .about__link,
+  .footer .links .quick-links .useful-information__link,
+  .footer .links .quick-links .quick-links__link {
+    display: none;
+  }
+  .footer .copyright-social-media {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    /* Style for social media container on mobile devices */
+  }
+  .footer .copyright-social-media .copyright {
+    /* Style for copyright text on mobile devices */
+  }
+  .footer .copyright-social-media .copyright .copyright__text {
+    text-align: center;
+  }
+  .footer .copyright-social-media .social-media {
+    display: none;
+  }
+}/*# sourceMappingURL=footer.component.css.map */

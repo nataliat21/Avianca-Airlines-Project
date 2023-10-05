@@ -581,6 +581,10 @@ $navegation-tab-color: #dad9d9;
         font-weight: bold;
         @include flex-align(center);
 
+        &:hover{
+          text-decoration: underline;
+        }
+
         /* Styles for the icon inside the link */
         .new-experiences-card__icon {
           margin-left: 5px;

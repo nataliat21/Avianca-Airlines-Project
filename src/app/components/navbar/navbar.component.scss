@@ -7,7 +7,7 @@ $header-navbar-main-color: #ED0707;
 /* Mixin that applies the flexbox property and modifies the value of the align property */
 @mixin flex-align($align){
   display: flex;
-  align-items: center;
+  align-items: $align;
 }
 
 /* Mixin to set background color and border radius*/

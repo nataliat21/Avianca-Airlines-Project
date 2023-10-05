@@ -1,0 +1,164 @@
+@import '../navbar/navbar.component.scss';
+@import '../main/main.component.scss';
+
+
+.footer{
+  /* Style definition for the 'line' class */
+  .line{
+    border: 1px solid rgba(194, 187, 187, 0.425);
+    width: 87%;
+    text-align: center;
+  }
+  /* Style definition for the 'links' class container */
+  .links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    margin-bottom: 20px;
+
+    /* Styles for internal element classes: 'additional-services', 'about', 'useful-information' and 'quick-links' */
+    .additional-services,
+    .about,
+    .useful-information,
+    .quick-links{
+      @include flex-align(flex-start);
+      @include set-flex-direction-and-justify-content(column, flex-start);
+
+      /* Styles for section titles */
+      .additional-services__title,
+      .about__title,
+      .useful-information__title,
+      .quick-links__title{
+        color: $header-navbar-main-color;
+        font-size: 15px;
+      }
+
+      /* Styles for section links */
+      .additional-services__link,
+      .about__link,
+      .useful-information__link,
+      .quick-links__link{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 13px;
+        margin-bottom: 8px;
+        transition: transform 0.3s;
+
+        &:hover{
+          text-decoration: underline;
+          transform: translateX(-5px);
+        }
+      }
+    }
+  }/* End of the links container*/
+
+  /* Style for class 'copyright-social-media' */
+  .copyright-social-media{
+    background-color: $navegation-tab-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+
+    /* Style for the 'copyright' class */
+    .copyright{
+      @include flex-align(center);
+      justify-content: center;
+
+      /* Style for copyright text */
+      .copyright__text{
+        font-size: 12px;
+      }
+
+    }
+
+    /* Style for the 'social-media' class */
+    .social-media{
+      @include flex-align(center);
+      justify-content: flex-end;
+
+      /* Style for social media icons */
+      .social-media__icon{
+        margin: 5px;
+
+        &:hover{
+          background-color: $header-navbar-main-color;
+        }
+      }
+    }
+  }/* End of the copyright social media container*/
+}
+
+@media screen and (max-width:320px) {
+  .footer{
+    /* Style for class 'line' on mobile devices */
+    .line{
+      width: 90%;
+    }
+
+    /* Style for the 'links' on mobile devices container */
+    .links{
+      display: grid;
+      grid-template-columns: 1fr ;
+      place-items: center;
+      // margin-bottom: 20px;
+      margin: 10px;
+
+      /* Style for internal element classes: 'additional-services', 'about', 'useful-information' and 'quick-links' on mobile devices */
+      .additional-services,
+      .about,
+      .useful-information,
+      .quick-links{
+        @include flex-align(center);
+        @include set-flex-direction-and-justify-content(column,center);
+        cursor: pointer;
+        background-color:$navegation-tab-color ;
+        margin: 5px;
+        width: 100%;
+
+        /* Style for on mobile section titles */
+        .additional-services__title,
+        .about__title,
+        .useful-information__title,
+        .quick-links__title{
+          transition: transform 0.3s;
+
+          &:hover{
+            color: black;
+            text-decoration: underline;
+            transform: translateX(-5px);
+          }
+        }
+
+        /* Style for the links of the on mobile sections */
+        .additional-services__link,
+        .about__link,
+        .useful-information__link,
+        .quick-links__link{
+          display: none;
+        }
+      }
+    }/* End of the links container on mobile devices*/
+
+     /* Style for copyright social media container on mobile devices */
+    .copyright-social-media{
+      display: grid;
+      grid-template-columns: 1fr;
+      flex-direction: column;
+
+      .copyright{
+
+        /* Style for copyright text on mobile devices */
+        .copyright__text{
+          text-align: center;
+        }
+      }
+
+       /* Style for social media container on mobile devices */
+      .social-media{
+        display: none;
+      }
+    }/* End of the copyright social media container on mobile devices*/
+
+  }
+}
