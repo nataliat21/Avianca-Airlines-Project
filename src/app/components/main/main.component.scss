@@ -96,8 +96,7 @@ $navegation-tab-color: #dad9d9;
     /* Style for the promotional title */
     .promotional__title{
       @include set-position-top-and-left(absolute, 90px, 100px);
-      @include set-font-size-and-font-color(45px, $navbar-section-text-primary-color);
-      font-family: 'Signika Negative', sans-serif;
+      @include set-font-size-and-font-color(40px, $navbar-section-text-primary-color);
     }
 
     /* Style for the promotional subtitle */

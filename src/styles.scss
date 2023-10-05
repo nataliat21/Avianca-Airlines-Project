@@ -1,8 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
-//Apply these styles to the body section
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../src/font/Lato-Regular.ttf') format('truetype');
+}
+
+
+// Apply these styles to the body section
 body{
   font-family: 'Lato', sans-serif;
   margin: 0px;
   padding: 0px;
 }
+
+
