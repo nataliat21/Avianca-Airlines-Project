@@ -8,7 +8,7 @@
 
   /* Styles for the logo element inside the header on desktop */
   .header__logo--desktop{
-    padding: 15px 0px 15px 30px;
+    padding: 15px;
   }
 
   /* Styles for the logo element inside the header on mobile */
@@ -18,7 +18,7 @@
 
 }/*End of the main header*/
 
-@media screen and (max-width:320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   /* Styles for the header on mobile devices */
   .header{
     @include flex-align(center);
