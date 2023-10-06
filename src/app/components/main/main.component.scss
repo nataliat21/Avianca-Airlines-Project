@@ -167,7 +167,6 @@ $navegation-tab-color: #dad9d9;
 
   /* Styles for the flight search section */
   .flight-search{
-
     /* Styles for search options */
     .flight-search__options{
       @include flex-align(center);
@@ -212,146 +211,136 @@ $navegation-tab-color: #dad9d9;
       }
     }
 
-    /* Styles for the question section */
-    .flight-search__questions{
-      @include flex-align(center);
-      justify-content: flex-start;
-      width: 95%;
-      @include set-position-top-and-left(absolute, 488px, 22px);
-      @include set-background-color-and-padding($navbar-section-text-primary-color,20px 0px 20px 20px);
-      cursor: pointer;
+    /* Styles for the questions and destination container*/
+    .flight-search-questions-destination{
+      grid-template-rows: repeat(2, 1fr);
 
-      /* Styles for individual questions */
-      .flight-search__question{
-        font-size: 25px;
-        margin-bottom: 10px;
-        font-weight: 700;
-      }
+      /* Styles for the question section */
+      .flight-search__questions{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        // justify-content: space-between;
+        width: 95%;
+        @include set-position-top-and-left(absolute, 490px,22px);
+        @include set-background-color-and-padding($navbar-section-text-primary-color,15px 10px);
+        cursor: pointer;
 
-      /* Styles for the question "Where are you traveling?" */
-      .flight-search__question--where{
-        margin-left: 20px;
-        margin-right: 180px;
-      }
-
-      /* Styles for the question "When are you traveling?" */
-      .flight-search__question--when{
-        margin-right: 170px;
-      }
-    }
-
-    /* Styles for the main destination container */
-    .flight-search__destination{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr auto;
-      @include set-background-color-and-padding($navbar-section-text-primary-color,20px 0px 20px 20px);
-      @include set-position-top-and-left(absolute, 543px, 22px);
-      width: 95%;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-
-      /* Origin and destination section */
-      .flight-search__destination-from-to{
-        @include flex-align(center);
-        margin-left: 20px;
-
-        /* Styles for the origin and destination input fields */
-        .flight-search__input--from-to{
-          @include flex-align(center);
-          width: 100px;
-          height: 20px;
-          border: none;
-          border-bottom: 2px solid black;
-          font-family: 'Lato', sans-serif;
-          font-size: 20px;
-          padding-bottom: 5px;
-        }
-
-        /* Styles for icons */
-        .flight-search__icon{
-          margin: 5px;
-        }
-
-        .flight-search__icon--arrows{
-          margin-left: 15px;
-          margin-right: 15px;
-        }
-      }
-
-      /* Departure and return section */
-      .flight-search__destination-departure-comeback{
-        @include flex-align(center);
-        margin-left: 20px;
-
-        /* Styles for the departure and return field */
-        .flight-search__input--departure-comeback{
-          width: 100px;
-          height: 20px;
-          @include flex-align(center);
-          font-family: 'Lato', sans-serif;
-          font-size: 20px;
-          padding-bottom: 5px;
-          border: none;
-          border-bottom: 2px solid black;
-        }
-
-        /* Styles for icons */
-        .flight-search__icon{
-          margin: 5px;
-        }
-      }
-
-      /* Passenger section */
-      .flight-search__destination-passengers{
-        @include flex-align(center);
-
-        /* Styles for passenger text */
-        .flight-search__text--passenger{
-          margin-right: 10px;
-        }
-
-        /* Styles for the passenger entry field */
-        .flight-search__input--passenger{
-          width: 200px;
-          height: 20px;
-          @include flex-align(center);
-          font-family: 'Lato', sans-serif;
-          font-size: 20px;
-          padding-bottom: 5px;
-          border: none;
-          border-bottom: 2px solid black;
-        }
-
-        /* Styles for icons */
-        .flight-search__icon{
-          margin-left: 5px;
-        }
-      }
-
-      /* Button section */
-      .flight-search__destination-button{
-        @include flex-align(center);
-        justify-content: center;
-        margin-right: 40px;
-
-        /* Styles for the flight search button */
-        .flight-search__button{
-          @include flex-align(center);
-          font-family: 'Lato', sans-serif;
-          @include set-font-size-and-font-color(15px,$navbar-section-text-primary-color);
-          @include set-border-and-border-radius(none, 5px);
-          @include set-background-color-and-padding($header-navbar-main-color,5px 30px);
+        /* Styles for individual questions */
+        .flight-search__question{
+          font-size: 25px;
           font-weight: 700;
+        }
 
-          /* Styles for the button's hover state */
-          &:hover{
-            background-color: rgba(0, 0, 0, 0.61);
-            transition:all .3s ease-in-out;
+      }
+
+      /* Styles for the main destination container */
+      .flight-search__destination{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include set-background-color-and-padding($navbar-section-text-primary-color,15px 10px);
+        @include set-position-top-and-left(absolute, 543px, 22px);
+        width: 95%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        /* Origin and destination section */
+        .flight-search__destination-from-to{
+          @include flex-align(center);
+
+          /* Styles for the origin and destination input fields */
+          .flight-search__input--from-to{
+            @include flex-align(center);
+            width: 100px;
+            height: 20px;
+            border: none;
+            border-bottom: 2px solid black;
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            padding-bottom: 5px;
+          }
+
+          /* Styles for icons */
+          .flight-search__icon{
+            margin: 5px;
+          }
+
+          .flight-search__icon--arrows{
+            margin-left: 15px;
+            margin-right: 15px;
+          }
+        }
+
+        /* Departure and return section */
+        .flight-search__destination-departure-comeback{
+          @include flex-align(center);
+          /* Styles for the departure and return field */
+          .flight-search__input--departure-comeback{
+            width: 100px;
+            height: 20px;
+            @include flex-align(center);
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            padding-bottom: 5px;
+            border: none;
+            border-bottom: 2px solid black;
+          }
+
+          /* Styles for icons */
+          .flight-search__icon{
+            margin: 5px;
+          }
+        }
+
+        /* Passenger section */
+        .flight-search__destination-passengers{
+          @include flex-align(center);
+
+          /* Styles for passenger text */
+          .flight-search__text--passenger{
+            margin-right: 5px;
+          }
+
+          /* Styles for the passenger entry field */
+          .flight-search__input--passenger{
+            width: 100px;
+            height: 20px;
+            @include flex-align(center);
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            padding-bottom: 5px;
+            border: none;
+            border-bottom: 2px solid black;
+          }
+
+          /* Styles for icons */
+          .flight-search__icon{
+            margin-left: 5px;
+          }
+
+          /* Styles for the flight search button */
+          .flight-search__button{
+            @include flex-align(center);
+            justify-content: center;
+            font-family: 'Lato', sans-serif;
+            @include set-font-size-and-font-color(15px,$navbar-section-text-primary-color);
+            @include set-border-and-border-radius(none, 5px);
+            @include set-background-color-and-padding($header-navbar-main-color,5px 10px);
+            font-weight: 700;
+            margin-left: 10px;
+
+            /* Styles for the button's hover state */
+            &:hover{
+              background-color: rgba(0, 0, 0, 0.61);
+              transition:all .3s ease-in-out;
+            }
           }
         }
       }
-    }
-  }/*End of flight search section*/
+
+    }/*End of flight search section*/
+  }
+
+
 
   /* Styles for the flight search mobile section  */
   .flight-search-mobile{
@@ -778,6 +767,7 @@ $navegation-tab-color: #dad9d9;
           @include set-border-and-border-radius(none, 5px);
           font-weight: 700;
           color: $navbar-section-text-primary-color;
+          font-family: 'Lato', sans-serif;
 
           &:hover{
             transition:all .3s ease-in-out;
