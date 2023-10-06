@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 15px 0px 15px 20px;
+  padding: 15px 0px;
   /* Styles for links within the left section */
 }
 .navbar .navbar-left .navbar-left__link {
@@ -26,6 +26,7 @@
   color: #FFFFFF;
   display: flex;
   align-items: center;
+  white-space: nowrap;
   /* Styles for icons within links */
 }
 .navbar .navbar-left .navbar-left__link:hover {
@@ -46,6 +47,7 @@
   text-decoration: none;
   color: #FFFFFF;
   margin: 10px;
+  white-space: nowrap;
 }
 .navbar .navbar-right .navbar-right__link:hover {
   border-bottom: 2px solid #FFFFFF;
@@ -196,7 +198,7 @@
   background-color: #ED0707;
   color: #FFFFFF;
   padding: 15px 40px 15px 40px;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-weight: 700;
   font-size: 15px;
 }
@@ -343,7 +345,7 @@
   height: 20px;
   border: none;
   border-bottom: 2px solid black;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   padding-bottom: 5px;
 }
@@ -365,7 +367,7 @@
   height: 20px;
   display: flex;
   align-items: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   padding-bottom: 5px;
   border: none;
@@ -390,7 +392,7 @@
   height: 20px;
   display: flex;
   align-items: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   padding-bottom: 5px;
   border: none;
@@ -403,7 +405,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 15px;
   color: #FFFFFF;
   border: none;
@@ -509,7 +511,7 @@
   padding: 10px 40px;
   font-weight: 700;
   color: #FFFFFF;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
 }
 .main .more-destinations .more-destinations__button:hover {
   background-color: rgba(0, 0, 0, 0.61);
@@ -839,7 +841,7 @@
     border-radius: 5px;
     font-weight: 700;
     color: #FFFFFF;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto Regular", sans-serif;
   }
   .main .flight-search-mobile .flight-search-mobile__search .flight-search-mobile__search-button:hover {
     transition: all 0.3s ease-in-out;

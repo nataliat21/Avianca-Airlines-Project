@@ -53,13 +53,13 @@ $header-navbar-main-color: #ED0707;
   /* Styles for the right section of the navigation bar */
   .navbar-right{
     @include flex-align(center);
-    justify-content: center;
+    justify-content: flex-start;
 
     /* Styles for links within the right section */
     .navbar-right__link{
       text-decoration: none;
       color: $navbar-section-text-primary-color;
-      margin: 10px;
+      margin: 0px 8px;
       white-space: nowrap;
 
       &:hover{
@@ -72,11 +72,12 @@ $header-navbar-main-color: #ED0707;
   /* Styles for the right section of icons in the navigation bar */
   .navbar-right-icons{
     @include flex-align(center);
-    justify-content: flex-end;
+    justify-content: center;
 
     /* Styles for the icons in the right section */
     .navbar-right__icon{
-      margin: 20px;
+      margin: 10px;
+
 
       &:hover{
         @include set-background-color-and-border-radius(rgba(0, 0, 0, 0.39), 5px);

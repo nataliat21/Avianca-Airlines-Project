@@ -40,13 +40,13 @@
 .navbar .navbar-right {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   /* Styles for links within the right section */
 }
 .navbar .navbar-right .navbar-right__link {
   text-decoration: none;
   color: #FFFFFF;
-  margin: 10px;
+  margin: 0px 8px;
   white-space: nowrap;
 }
 .navbar .navbar-right .navbar-right__link:hover {
@@ -56,11 +56,11 @@
 .navbar .navbar-right-icons {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   /* Styles for the icons in the right section */
 }
 .navbar .navbar-right-icons .navbar-right__icon {
-  margin: 20px;
+  margin: 10px;
 }
 .navbar .navbar-right-icons .navbar-right__icon:hover {
   background-color: rgba(0, 0, 0, 0.39);
