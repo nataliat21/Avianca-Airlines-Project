@@ -808,7 +808,7 @@
   }
   .main .flight-search-mobile .flight-search-mobile__table .flight-search-mobile__table-icon .flight-search-mobile__table-icon-svg {
     position: absolute;
-    top: 25px;
+    top: 35px;
     left: 50%;
     transform: translate(-50%, -50%);
   }

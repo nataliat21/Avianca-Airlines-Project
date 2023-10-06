@@ -730,7 +730,7 @@ $navegation-tab-color: #dad9d9;
 
           /* Styles for the SVG icon on mobile */
           .flight-search-mobile__table-icon-svg{
-            @include set-position-top-and-left(absolute, 25px, 50%);
+            @include set-position-top-and-left(absolute, 35px, 50%);
             transform: translate(-50%, -50%);
           }
         }
