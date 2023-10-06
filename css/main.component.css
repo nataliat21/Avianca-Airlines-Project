@@ -69,7 +69,7 @@
 }
 
 /* End of the navegation bar */
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   /* Styles for the navigation bar on mobile */
   .navbar {
     grid-template-columns: 1fr;
@@ -654,7 +654,7 @@
 }
 
 /* End of main section */
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .main {
     /* Styles for the promotional section on mobile */
     /*End of the mobile promotional section */
@@ -716,8 +716,9 @@
   }
   .main .promotional .promotional__button {
     position: absolute;
-    top: 200px;
-    left: 75px;
+    top: 240px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .main .promotional .promotional__dots {
     border: none;
@@ -817,8 +818,9 @@
   }
   .main .flight-search-mobile .flight-search-mobile__table .flight-search-mobile__table-icon .flight-search-mobile__table-icon-svg {
     position: absolute;
-    top: 17px;
-    left: 133px;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .main .flight-search-mobile .flight-search-mobile__promotional-code {
     display: flex;

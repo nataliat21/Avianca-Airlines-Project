@@ -89,7 +89,7 @@
   }/* End of the copyright social media container*/
 }
 
-@media screen and (max-width:320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .footer{
     /* Style for class 'line' on mobile devices */
     .line{

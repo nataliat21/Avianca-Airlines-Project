@@ -594,7 +594,7 @@ $navegation-tab-color: #dad9d9;
 
 }/* End of main section */
 
-@media screen and (max-width:320px) {
+@media (min-width: 320px) and (max-width: 425px){
   .main{
     /* Styles for the promotional section on mobile */
     .promotional{
@@ -632,7 +632,8 @@ $navegation-tab-color: #dad9d9;
 
       /* Styles for the promotional button on mobile */
       .promotional__button{
-        @include set-position-top-and-left(absolute, 200px, 75px);
+        @include set-position-top-and-left(absolute, 240px, 50%);
+        transform: translate(-50%, -50%);
       }
 
       /* Styles for the dot icon container on mobile */
@@ -740,9 +741,8 @@ $navegation-tab-color: #dad9d9;
 
           /* Styles for the SVG icon on mobile */
           .flight-search-mobile__table-icon-svg{
-            position: absolute;
-            top: 17px;
-            left: 133px;
+            @include set-position-top-and-left(absolute, 25px, 50%);
+            transform: translate(-50%, -50%);
           }
         }
       }

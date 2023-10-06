@@ -69,7 +69,7 @@
 }
 
 /* End of the navegation bar */
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   /* Styles for the navigation bar on mobile */
   .navbar {
     grid-template-columns: 1fr;

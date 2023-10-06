@@ -18,7 +18,7 @@
 
 }/*End of the main header*/
 
-@media screen and (max-width:320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   /* Styles for the header on mobile devices */
   .header{
     @include flex-align(center);

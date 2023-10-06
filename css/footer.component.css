@@ -69,7 +69,7 @@
 }
 
 /* End of the navegation bar */
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   /* Styles for the navigation bar on mobile */
   .navbar {
     grid-template-columns: 1fr;
@@ -168,7 +168,7 @@
 }
 
 /* End of the navegation bar */
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   /* Styles for the navigation bar on mobile */
   .navbar {
     grid-template-columns: 1fr;
@@ -272,9 +272,8 @@
   position: absolute;
   top: 90px;
   left: 100px;
-  font-size: 45px;
+  font-size: 40px;
   color: #FFFFFF;
-  font-family: "Signika Negative", sans-serif;
 }
 .main .promotional .promotional__subtitle {
   position: absolute;
@@ -746,12 +745,15 @@
   align-items: center;
   /* Styles for the icon inside the link */
 }
+.main .new-experiences-cards .new-experiences-card .new-experiences-card__text--apply:hover {
+  text-decoration: underline;
+}
 .main .new-experiences-cards .new-experiences-card .new-experiences-card__text--apply .new-experiences-card__icon {
   margin-left: 5px;
 }
 
 /* End of main section */
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .main {
     /* Styles for the promotional section on mobile */
     /*End of the mobile promotional section */
@@ -813,8 +815,9 @@
   }
   .main .promotional .promotional__button {
     position: absolute;
-    top: 200px;
-    left: 75px;
+    top: 240px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .main .promotional .promotional__dots {
     border: none;
@@ -914,8 +917,9 @@
   }
   .main .flight-search-mobile .flight-search-mobile__table .flight-search-mobile__table-icon .flight-search-mobile__table-icon-svg {
     position: absolute;
-    top: 17px;
-    left: 133px;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .main .flight-search-mobile .flight-search-mobile__promotional-code {
     display: flex;
@@ -1165,7 +1169,7 @@
   background-color: #ED0707;
 }
 
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .footer {
     /* Style for class 'line' on mobile devices */
     /* Style for the 'links' on mobile devices container */
