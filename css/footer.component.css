@@ -40,13 +40,13 @@
 .navbar .navbar-right {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   /* Styles for links within the right section */
 }
 .navbar .navbar-right .navbar-right__link {
   text-decoration: none;
   color: #FFFFFF;
-  margin: 10px;
+  margin: 0px 8px;
   white-space: nowrap;
 }
 .navbar .navbar-right .navbar-right__link:hover {
@@ -56,11 +56,11 @@
 .navbar .navbar-right-icons {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   /* Styles for the icons in the right section */
 }
 .navbar .navbar-right-icons .navbar-right__icon {
-  margin: 20px;
+  margin: 10px;
 }
 .navbar .navbar-right-icons .navbar-right__icon:hover {
   background-color: rgba(0, 0, 0, 0.39);
@@ -71,7 +71,7 @@
 }
 
 /* End of the navegation bar */
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 280px) and (max-width: 912px) {
   /* Styles for the navigation bar on mobile */
   .navbar {
     grid-template-columns: 1fr;
@@ -141,13 +141,13 @@
 .navbar .navbar-right {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   /* Styles for links within the right section */
 }
 .navbar .navbar-right .navbar-right__link {
   text-decoration: none;
   color: #FFFFFF;
-  margin: 10px;
+  margin: 0px 8px;
   white-space: nowrap;
 }
 .navbar .navbar-right .navbar-right__link:hover {
@@ -157,11 +157,11 @@
 .navbar .navbar-right-icons {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   /* Styles for the icons in the right section */
 }
 .navbar .navbar-right-icons .navbar-right__icon {
-  margin: 20px;
+  margin: 10px;
 }
 .navbar .navbar-right-icons .navbar-right__icon:hover {
   background-color: rgba(0, 0, 0, 0.39);
@@ -172,7 +172,7 @@
 }
 
 /* End of the navegation bar */
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 280px) and (max-width: 912px) {
   /* Styles for the navigation bar on mobile */
   .navbar {
     grid-template-columns: 1fr;
@@ -298,8 +298,8 @@
   border-radius: 5px;
   background-color: #ED0707;
   color: #FFFFFF;
-  padding: 15px 40px 15px 40px;
-  font-family: "Lato", sans-serif;
+  padding: 10px 20px;
+  font-family: "Roboto Regular", sans-serif;
   font-weight: 700;
   font-size: 15px;
 }
@@ -446,7 +446,7 @@
   height: 20px;
   border: none;
   border-bottom: 2px solid black;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   padding-bottom: 5px;
 }
@@ -468,7 +468,7 @@
   height: 20px;
   display: flex;
   align-items: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   padding-bottom: 5px;
   border: none;
@@ -493,7 +493,7 @@
   height: 20px;
   display: flex;
   align-items: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   padding-bottom: 5px;
   border: none;
@@ -506,7 +506,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 15px;
   color: #FFFFFF;
   border: none;
@@ -612,7 +612,7 @@
   padding: 10px 40px;
   font-weight: 700;
   color: #FFFFFF;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
 }
 .main .more-destinations .more-destinations__button:hover {
   background-color: rgba(0, 0, 0, 0.61);
@@ -743,7 +743,7 @@
 }
 
 /* End of main section */
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 280px) and (max-width: 912px) {
   .main {
     /* Styles for the promotional section on mobile */
     /*End of the mobile promotional section */
@@ -790,22 +790,24 @@
     -webkit-filter: brightness(80%);
   }
   .main .promotional .promotional__title {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     position: absolute;
-    top: 30px;
-    left: 0px;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .main .promotional .promotional__subtitle {
     position: absolute;
-    top: 120px;
-    left: 0px;
+    top: 150px;
+    left: 50%;
     font-size: 20px;
     text-align: center;
+    transform: translate(-50%, -50%);
   }
   .main .promotional .promotional__button {
     position: absolute;
-    top: 240px;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -942,7 +944,7 @@
     border-radius: 5px;
     font-weight: 700;
     color: #FFFFFF;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto Regular", sans-serif;
   }
   .main .flight-search-mobile .flight-search-mobile__search .flight-search-mobile__search-button:hover {
     transition: all 0.3s ease-in-out;
@@ -989,7 +991,7 @@
     margin-left: 5px;
   }
   .main .flight-info {
-    margin-top: 500px;
+    margin-top: 520px;
     /* Styles for the flight information title on mobile */
     /* Styles for the title description on mobile */
   }
@@ -1005,7 +1007,11 @@
     margin: 5px;
   }
   .main .all-you-need-to-know {
+    /* Title styles on mobile*/
     /*Paragraph styles on mobile */
+  }
+  .main .all-you-need-to-know .all-you-need-to-know__title {
+    text-align: center;
   }
   .main .all-you-need-to-know .all-you-need-to-know__description {
     text-align: center;
@@ -1017,8 +1023,8 @@
     /* Styles for each service card on mobile */
   }
   .main .service-cards .service-card {
-    margin: 5px;
-    width: 290px;
+    height: 100%;
+    width: 100%;
   }
   .main .avianca {
     /* Styles for the title and text of the Avianca section on mobile devices*/
@@ -1142,6 +1148,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 10px;
   /* Style for copyright text */
 }
 .footer .copyright-social-media .copyright .copyright__text {
@@ -1160,7 +1167,7 @@
   background-color: #ED0707;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 280px) and (max-width: 912px) {
   .footer {
     /* Style for class 'line' on mobile devices */
     /* Style for the 'links' on mobile devices container */

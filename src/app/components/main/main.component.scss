@@ -116,7 +116,7 @@ $navegation-tab-color: #dad9d9;
       @include set-position-top-and-left(absolute, 250px, 100px);
       @include set-border-and-border-radius(none, 5px);
       @include set-background-color-and-font-color( $header-navbar-main-color,$navbar-section-text-primary-color);
-      padding: 15px 40px 15px 40px;
+      padding: 10px 20px;
       font-family: 'Roboto Regular', sans-serif;;
       font-weight: 700;
       font-size: 15px;
@@ -339,8 +339,6 @@ $navegation-tab-color: #dad9d9;
 
     }/*End of flight search section*/
   }
-
-
 
   /* Styles for the flight search mobile section  */
   .flight-search-mobile{
@@ -583,7 +581,7 @@ $navegation-tab-color: #dad9d9;
 
 }/* End of main section */
 
-@media (min-width: 320px) and (max-width: 425px){
+@media (min-width: 280px) and (max-width: 912px){
   .main{
     /* Styles for the promotional section on mobile */
     .promotional{
@@ -609,19 +607,21 @@ $navegation-tab-color: #dad9d9;
 
       /* Styles for the promotional title on mobile */
       .promotional__title{
-        @include set-font-size-and-text-align(30px, center);
-        @include set-position-top-and-left(absolute, 30px, 0px);
+        @include set-font-size-and-text-align(25px, center);
+        @include set-position-top-and-left(absolute, 40px, 50%);
+        transform: translate(-50%, -50%);
       }
 
       /* Styles for the promotional subtitle on mobile */
       .promotional__subtitle{
-        @include set-position-top-and-left(absolute, 120px, 0px);
+        @include set-position-top-and-left(absolute, 150px, 50%);
         @include set-font-size-and-text-align(20px, center);
+        transform: translate(-50%, -50%);
       }
 
       /* Styles for the promotional button on mobile */
       .promotional__button{
-        @include set-position-top-and-left(absolute, 240px, 50%);
+        @include set-position-top-and-left(absolute, 250px, 50%);
         transform: translate(-50%, -50%);
       }
 
@@ -822,7 +822,7 @@ $navegation-tab-color: #dad9d9;
 
     /* Styles for the flight info on mobile devices */
     .flight-info{
-      margin-top: 500px;
+      margin-top: 520px;
 
       /* Styles for the flight information title on mobile */
       .flight-info__title{
@@ -845,6 +845,10 @@ $navegation-tab-color: #dad9d9;
 
     /*Section styles everything you need to know on mobile*/
     .all-you-need-to-know{
+      /* Title styles on mobile*/
+      .all-you-need-to-know__title{
+        text-align: center;
+      }
       /*Paragraph styles on mobile */
       .all-you-need-to-know__description{
         text-align: center;
@@ -858,8 +862,8 @@ $navegation-tab-color: #dad9d9;
 
       /* Styles for each service card on mobile */
       .service-card{
-        margin: 5px;
-        width: 290px;
+        height: 100%;
+        width: 100%;
       }
     }/* End of service cards on mobile devices */
 

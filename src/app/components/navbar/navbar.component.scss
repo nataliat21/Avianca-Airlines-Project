@@ -91,7 +91,7 @@ $header-navbar-main-color: #ED0707;
   }
 }/* End of the navegation bar */
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 280px) and (max-width: 912px) {
   /* Styles for the navigation bar on mobile */
   .navbar{
     grid-template-columns: 1fr;
