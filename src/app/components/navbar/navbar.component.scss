@@ -27,7 +27,8 @@ $header-navbar-main-color: #ED0707;
   .navbar-left{
     @include flex-align(center);
     justify-content: flex-start;
-    padding: 15px 0px 15px 20px ;
+    // padding: 15px 0px 15px 20px ;
+    padding: 15px 0px;
 
     /* Styles for links within the left section */
     .navbar-left__link{
@@ -35,6 +36,7 @@ $header-navbar-main-color: #ED0707;
       text-decoration: none;
       color: $navbar-section-text-primary-color;
       @include flex-align(center);
+      white-space: nowrap;
 
       &:hover{
         @include set-background-color-and-border-radius(rgba(0, 0, 0, 0.39), 10px);
@@ -58,6 +60,7 @@ $header-navbar-main-color: #ED0707;
       text-decoration: none;
       color: $navbar-section-text-primary-color;
       margin: 10px;
+      white-space: nowrap;
 
       &:hover{
         border-bottom: 2px solid #FFFFFF;
