@@ -1,102 +1,4 @@
-/* Set the main text color for the navigation bar to white */
-/* Header and navbar main color */
-/* Mixin that applies the flexbox property and modifies the value of the align property */
-/* Mixin to set background color and border radius*/
-/* General styles for the navigation bar */
-.navbar {
-  background-color: #ED0707;
-  height: 70px;
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  /* Styles for the left section of the navigation bar */
-  /* Styles for the right section of the navigation bar */
-  /* Styles for the right section of icons in the navigation bar */
-  /* Do not show the navigation bar icon container on mobile */
-}
-.navbar .navbar-left {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 15px 0px 15px 20px;
-  /* Styles for links within the left section */
-}
-.navbar .navbar-left .navbar-left__link {
-  margin: 10px;
-  text-decoration: none;
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  /* Styles for icons within links */
-}
-.navbar .navbar-left .navbar-left__link:hover {
-  background-color: rgba(0, 0, 0, 0.39);
-  border-radius: 10px;
-  height: 100%;
-}
-.navbar .navbar-left .navbar-left__link .navbar-left__icon {
-  margin: 5px;
-}
-.navbar .navbar-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* Styles for links within the right section */
-}
-.navbar .navbar-right .navbar-right__link {
-  text-decoration: none;
-  color: #FFFFFF;
-  margin: 10px;
-}
-.navbar .navbar-right .navbar-right__link:hover {
-  border-bottom: 2px solid #FFFFFF;
-  font-weight: 700;
-}
-.navbar .navbar-right-icons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  /* Styles for the icons in the right section */
-}
-.navbar .navbar-right-icons .navbar-right__icon {
-  margin: 20px;
-}
-.navbar .navbar-right-icons .navbar-right__icon:hover {
-  background-color: rgba(0, 0, 0, 0.39);
-  border-radius: 5px;
-}
-.navbar .navbar-mobile-icons {
-  display: none;
-}
-
-/* End of the navegation bar */
-@media (min-width: 320px) and (max-width: 425px) {
-  /* Styles for the navigation bar on mobile */
-  .navbar {
-    grid-template-columns: 1fr;
-    height: 50px;
-    /* Hide sections */
-    /* Styles for the icon container in the mobile navigation bar */
-  }
-  .navbar .navbar-left,
-  .navbar .navbar-right,
-  .navbar .navbar-right-icons {
-    display: none;
-  }
-  .navbar .navbar-mobile-icons {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    /* Styles for individual icons on mobile */
-  }
-  .navbar .navbar-mobile-icons .navbar-mobile__icon {
-    margin: 10px;
-  }
-  .navbar .navbar-mobile-icons .navbar-mobile__icon:hover {
-    background-color: rgba(0, 0, 0, 0.39);
-    border-radius: 5px;
-  }
-  /* End of the navbar section on mobile */
-}
+/* You can add global styles to this file, and also import other style files */
 /*Mixin to set the position of an element*/
 /* Mixin to set border and border radius properties */
 /* Mixin to set font size and text alignment */
@@ -105,6 +7,21 @@
 /* This mixin sets the background color and padding of an element*/
 /* Mixin to set background color and border radius */
 /*Mixin to set flex direction and justification*/
+/* Mixin that applies the flexbox property and modifies the value of the align property */
+/* Mixin to set background color and border radius*/
+/* Header and navbar main color */
+/* primary navbar section text color*/
+/*Background color of the main container for the tab navigation section*/
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../src/font/Roboto-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Roboto Regular", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
 /* Style for the main element with class 'main' */
 .main {
   /* Style for the promotional section */
@@ -195,8 +112,8 @@
   border-radius: 5px;
   background-color: #ED0707;
   color: #FFFFFF;
-  padding: 15px 40px 15px 40px;
-  font-family: "Lato", sans-serif;
+  padding: 10px 20px;
+  font-family: "Roboto Regular", sans-serif;
   font-weight: 700;
   font-size: 15px;
 }
@@ -343,7 +260,7 @@
   height: 20px;
   border: none;
   border-bottom: 2px solid black;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   padding-bottom: 5px;
 }
@@ -365,7 +282,7 @@
   height: 20px;
   display: flex;
   align-items: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   padding-bottom: 5px;
   border: none;
@@ -390,7 +307,7 @@
   height: 20px;
   display: flex;
   align-items: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   padding-bottom: 5px;
   border: none;
@@ -403,7 +320,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 15px;
   color: #FFFFFF;
   border: none;
@@ -509,7 +426,7 @@
   padding: 10px 40px;
   font-weight: 700;
   color: #FFFFFF;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
 }
 .main .more-destinations .more-destinations__button:hover {
   background-color: rgba(0, 0, 0, 0.61);
@@ -640,7 +557,7 @@
 }
 
 /* End of main section */
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 280px) and (max-width: 912px) {
   .main {
     /* Styles for the promotional section on mobile */
     /*End of the mobile promotional section */
@@ -687,22 +604,24 @@
     -webkit-filter: brightness(80%);
   }
   .main .promotional .promotional__title {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     position: absolute;
-    top: 30px;
-    left: 0px;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .main .promotional .promotional__subtitle {
     position: absolute;
-    top: 120px;
-    left: 0px;
+    top: 150px;
+    left: 50%;
     font-size: 20px;
     text-align: center;
+    transform: translate(-50%, -50%);
   }
   .main .promotional .promotional__button {
     position: absolute;
-    top: 240px;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -804,7 +723,7 @@
   }
   .main .flight-search-mobile .flight-search-mobile__table .flight-search-mobile__table-icon .flight-search-mobile__table-icon-svg {
     position: absolute;
-    top: 25px;
+    top: 35px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -839,7 +758,7 @@
     border-radius: 5px;
     font-weight: 700;
     color: #FFFFFF;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto Regular", sans-serif;
   }
   .main .flight-search-mobile .flight-search-mobile__search .flight-search-mobile__search-button:hover {
     transition: all 0.3s ease-in-out;
@@ -886,7 +805,7 @@
     margin-left: 5px;
   }
   .main .flight-info {
-    margin-top: 500px;
+    margin-top: 520px;
     /* Styles for the flight information title on mobile */
     /* Styles for the title description on mobile */
   }
@@ -902,7 +821,11 @@
     margin: 5px;
   }
   .main .all-you-need-to-know {
+    /* Title styles on mobile*/
     /*Paragraph styles on mobile */
+  }
+  .main .all-you-need-to-know .all-you-need-to-know__title {
+    text-align: center;
   }
   .main .all-you-need-to-know .all-you-need-to-know__description {
     text-align: center;
@@ -914,8 +837,8 @@
     /* Styles for each service card on mobile */
   }
   .main .service-cards .service-card {
-    margin: 5px;
-    width: 290px;
+    height: 100%;
+    width: 100%;
   }
   .main .avianca {
     /* Styles for the title and text of the Avianca section on mobile devices*/

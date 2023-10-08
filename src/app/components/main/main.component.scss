@@ -1,55 +1,4 @@
-@import '../navbar/navbar.component.scss';
-
-$navegation-tab-color: #dad9d9;
-
-/*Mixin to set the position of an element*/
-@mixin set-position-top-and-left($position-type, $top-offset, $left-offset) {
-  position: $position-type;
-  top: $top-offset;
-  left: $left-offset;
-}
-
-/* Mixin to set border and border radius properties */
-@mixin set-border-and-border-radius($border-style, $border-radius){
-  border: $border-style;
-  border-radius: $border-radius;
-}
-
-/* Mixin to set font size and text alignment */
-@mixin set-font-size-and-text-align($font-size,$text-align){
-  font-size: $font-size;
-  text-align: $text-align;
-}
-
-/*Mixin to set background color and font color*/
-@mixin set-background-color-and-font-color($background-color,$font-color){
-  background-color: $background-color;
-  color: $font-color;
-}
-
-/* Mixin to set font size and font color*/
-@mixin set-font-size-and-font-color($font-size,$font-color){
-  font-size: $font-size;
-  color: $font-color;
-}
-
-/* This mixin sets the background color and padding of an element*/
-@mixin set-background-color-and-padding($background-color,$padding){
-  background-color: $background-color;
-  padding: $padding;
-}
-
-/* Mixin to set background color and border radius */
-@mixin set-background-color-and-border-radius($background-color,$border-radius){
-  background-color: $background-color;
-  border-radius: $border-radius;
-}
-
-/*Mixin to set flex direction and justification*/
-@mixin set-flex-direction-and-justify-content($flex-direction,$justify-content){
-  flex-direction: $flex-direction;
-  justify-content: $justify-content;
-}
+@import '../../../styles.scss';
 
 
 
@@ -116,8 +65,8 @@ $navegation-tab-color: #dad9d9;
       @include set-position-top-and-left(absolute, 250px, 100px);
       @include set-border-and-border-radius(none, 5px);
       @include set-background-color-and-font-color( $header-navbar-main-color,$navbar-section-text-primary-color);
-      padding: 15px 40px 15px 40px;
-      font-family: 'Lato', sans-serif;
+      padding: 10px 20px;
+      font-family: 'Roboto Regular', sans-serif;;
       font-weight: 700;
       font-size: 15px;
 
@@ -254,7 +203,7 @@ $navegation-tab-color: #dad9d9;
             height: 20px;
             border: none;
             border-bottom: 2px solid black;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Roboto Regular', sans-serif;;
             font-size: 20px;
             padding-bottom: 5px;
           }
@@ -278,7 +227,7 @@ $navegation-tab-color: #dad9d9;
             width: 100px;
             height: 20px;
             @include flex-align(center);
-            font-family: 'Lato', sans-serif;
+            font-family: 'Roboto Regular', sans-serif;;
             font-size: 20px;
             padding-bottom: 5px;
             border: none;
@@ -305,7 +254,7 @@ $navegation-tab-color: #dad9d9;
             width: 100px;
             height: 20px;
             @include flex-align(center);
-            font-family: 'Lato', sans-serif;
+            font-family: 'Roboto Regular', sans-serif;;
             font-size: 20px;
             padding-bottom: 5px;
             border: none;
@@ -321,7 +270,7 @@ $navegation-tab-color: #dad9d9;
           .flight-search__button{
             @include flex-align(center);
             justify-content: center;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Roboto Regular', sans-serif;;
             @include set-font-size-and-font-color(15px,$navbar-section-text-primary-color);
             @include set-border-and-border-radius(none, 5px);
             @include set-background-color-and-padding($header-navbar-main-color,5px 10px);
@@ -339,8 +288,6 @@ $navegation-tab-color: #dad9d9;
 
     }/*End of flight search section*/
   }
-
-
 
   /* Styles for the flight search mobile section  */
   .flight-search-mobile{
@@ -438,7 +385,7 @@ $navegation-tab-color: #dad9d9;
       @include set-background-color-and-padding($header-navbar-main-color,10px 40px);
       font-weight: 700;
       color: $navbar-section-text-primary-color;
-      font-family: 'Lato', sans-serif ;
+      font-family: 'Roboto Regular', sans-serif; ;
 
       &:hover{
         background-color: rgba(0, 0, 0, 0.61);
@@ -583,7 +530,7 @@ $navegation-tab-color: #dad9d9;
 
 }/* End of main section */
 
-@media (min-width: 320px) and (max-width: 425px){
+@media (min-width: 280px) and (max-width: 912px){
   .main{
     /* Styles for the promotional section on mobile */
     .promotional{
@@ -609,19 +556,21 @@ $navegation-tab-color: #dad9d9;
 
       /* Styles for the promotional title on mobile */
       .promotional__title{
-        @include set-font-size-and-text-align(30px, center);
-        @include set-position-top-and-left(absolute, 30px, 0px);
+        @include set-font-size-and-text-align(25px, center);
+        @include set-position-top-and-left(absolute, 40px, 50%);
+        transform: translate(-50%, -50%);
       }
 
       /* Styles for the promotional subtitle on mobile */
       .promotional__subtitle{
-        @include set-position-top-and-left(absolute, 120px, 0px);
+        @include set-position-top-and-left(absolute, 150px, 50%);
         @include set-font-size-and-text-align(20px, center);
+        transform: translate(-50%, -50%);
       }
 
       /* Styles for the promotional button on mobile */
       .promotional__button{
-        @include set-position-top-and-left(absolute, 240px, 50%);
+        @include set-position-top-and-left(absolute, 250px, 50%);
         transform: translate(-50%, -50%);
       }
 
@@ -730,7 +679,7 @@ $navegation-tab-color: #dad9d9;
 
           /* Styles for the SVG icon on mobile */
           .flight-search-mobile__table-icon-svg{
-            @include set-position-top-and-left(absolute, 25px, 50%);
+            @include set-position-top-and-left(absolute, 35px, 50%);
             transform: translate(-50%, -50%);
           }
         }
@@ -767,7 +716,7 @@ $navegation-tab-color: #dad9d9;
           @include set-border-and-border-radius(none, 5px);
           font-weight: 700;
           color: $navbar-section-text-primary-color;
-          font-family: 'Lato', sans-serif;
+          font-family: 'Roboto Regular', sans-serif;;
 
           &:hover{
             transition:all .3s ease-in-out;
@@ -822,7 +771,7 @@ $navegation-tab-color: #dad9d9;
 
     /* Styles for the flight info on mobile devices */
     .flight-info{
-      margin-top: 500px;
+      margin-top: 520px;
 
       /* Styles for the flight information title on mobile */
       .flight-info__title{
@@ -845,6 +794,10 @@ $navegation-tab-color: #dad9d9;
 
     /*Section styles everything you need to know on mobile*/
     .all-you-need-to-know{
+      /* Title styles on mobile*/
+      .all-you-need-to-know__title{
+        text-align: center;
+      }
       /*Paragraph styles on mobile */
       .all-you-need-to-know__description{
         text-align: center;
@@ -858,8 +811,8 @@ $navegation-tab-color: #dad9d9;
 
       /* Styles for each service card on mobile */
       .service-card{
-        margin: 5px;
-        width: 290px;
+        height: 100%;
+        width: 100%;
       }
     }/* End of service cards on mobile devices */
 

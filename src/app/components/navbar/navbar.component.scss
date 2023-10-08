@@ -1,20 +1,6 @@
-/* Set the main text color for the navigation bar to white */
-$navbar-section-text-primary-color: #FFFFFF;
-/* Header and navbar main color */
-$header-navbar-main-color: #ED0707;
+@import '../../../styles.scss';
 
 
-/* Mixin that applies the flexbox property and modifies the value of the align property */
-@mixin flex-align($align){
-  display: flex;
-  align-items: $align;
-}
-
-/* Mixin to set background color and border radius*/
-@mixin set-background-color-and-border-radius($background-color, $border-radius){
-  background-color: $background-color;
-  border-radius: $border-radius;
-}
 
 /* General styles for the navigation bar */
 .navbar{
@@ -53,13 +39,13 @@ $header-navbar-main-color: #ED0707;
   /* Styles for the right section of the navigation bar */
   .navbar-right{
     @include flex-align(center);
-    justify-content: center;
+    justify-content: flex-start;
 
     /* Styles for links within the right section */
     .navbar-right__link{
       text-decoration: none;
       color: $navbar-section-text-primary-color;
-      margin: 10px;
+      margin: 0px 8px;
       white-space: nowrap;
 
       &:hover{
@@ -72,11 +58,12 @@ $header-navbar-main-color: #ED0707;
   /* Styles for the right section of icons in the navigation bar */
   .navbar-right-icons{
     @include flex-align(center);
-    justify-content: flex-end;
+    justify-content: center;
 
     /* Styles for the icons in the right section */
     .navbar-right__icon{
-      margin: 20px;
+      margin: 10px;
+
 
       &:hover{
         @include set-background-color-and-border-radius(rgba(0, 0, 0, 0.39), 5px);
@@ -90,7 +77,7 @@ $header-navbar-main-color: #ED0707;
   }
 }/* End of the navegation bar */
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 280px) and (max-width: 912px) {
   /* Styles for the navigation bar on mobile */
   .navbar{
     grid-template-columns: 1fr;

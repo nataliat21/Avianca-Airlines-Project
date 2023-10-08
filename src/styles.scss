@@ -1,15 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import '../src/app/core/core-mixins.scss';
+@import '../src/app/core/core-variables.scss';
 
 @font-face {
-  font-family: 'Lato';
-  src: url('../src/font/Lato-Regular.ttf') format('truetype');
+  font-family: 'Roboto Regular';
+  src: url('../src/font/Roboto-Regular.ttf') format('truetype');
 }
 
 
 // Apply these styles to the body section
 body{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Regular', sans-serif;
   margin: 0px;
   padding: 0px;
 }

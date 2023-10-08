@@ -1,10 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+/*Mixin to set the position of an element*/
+/* Mixin to set border and border radius properties */
+/* Mixin to set font size and text alignment */
+/*Mixin to set background color and font color*/
+/* Mixin to set font size and font color*/
+/* This mixin sets the background color and padding of an element*/
+/* Mixin to set background color and border radius */
+/*Mixin to set flex direction and justification*/
+/* Mixin that applies the flexbox property and modifies the value of the align property */
+/* Mixin to set background color and border radius*/
+/* Header and navbar main color */
+/* primary navbar section text color*/
+/*Background color of the main container for the tab navigation section*/
 @font-face {
-  font-family: "Lato";
-  src: url("../src/font/Lato-Regular.ttf") format("truetype");
+  font-family: "Roboto Regular";
+  src: url("../src/font/Roboto-Regular.ttf") format("truetype");
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   margin: 0px;
   padding: 0px;
 }/*# sourceMappingURL=styles.css.map */

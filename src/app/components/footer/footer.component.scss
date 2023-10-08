@@ -1,5 +1,4 @@
-@import '../navbar/navbar.component.scss';
-@import '../main/main.component.scss';
+@import '../../../styles.scss';
 
 
 .footer{
@@ -64,7 +63,7 @@
     .copyright{
       @include flex-align(center);
       justify-content: center;
-
+      margin-left: 10px;
       /* Style for copyright text */
       .copyright__text{
         font-size: 12px;
@@ -89,7 +88,7 @@
   }/* End of the copyright social media container*/
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 280px) and (max-width: 912px) {
   .footer{
     /* Style for class 'line' on mobile devices */
     .line{

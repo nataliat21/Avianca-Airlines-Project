@@ -1,4 +1,4 @@
-@import '../navbar/navbar.component.scss';
+@import '../../../styles.scss';
 
 
 /* Styles for the main header block */
@@ -18,7 +18,7 @@
 
 }/*End of the main header*/
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 280px) and (max-width: 912px) {
   /* Styles for the header on mobile devices */
   .header{
     @include flex-align(center);
