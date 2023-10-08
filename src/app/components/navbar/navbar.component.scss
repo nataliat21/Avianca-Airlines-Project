@@ -1,20 +1,6 @@
-/* Set the main text color for the navigation bar to white */
-$navbar-section-text-primary-color: #FFFFFF;
-/* Header and navbar main color */
-$header-navbar-main-color: #ED0707;
+@import '../../../styles.scss';
 
 
-/* Mixin that applies the flexbox property and modifies the value of the align property */
-@mixin flex-align($align){
-  display: flex;
-  align-items: $align;
-}
-
-/* Mixin to set background color and border radius*/
-@mixin set-background-color-and-border-radius($background-color, $border-radius){
-  background-color: $background-color;
-  border-radius: $border-radius;
-}
 
 /* General styles for the navigation bar */
 .navbar{

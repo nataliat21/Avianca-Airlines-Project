@@ -1,0 +1,60 @@
+/*Mixin to set the position of an element*/
+@mixin set-position-top-and-left($position-type, $top-offset, $left-offset) {
+  position: $position-type;
+  top: $top-offset;
+  left: $left-offset;
+}
+
+/* Mixin to set border and border radius properties */
+@mixin set-border-and-border-radius($border-style, $border-radius){
+  border: $border-style;
+  border-radius: $border-radius;
+}
+
+/* Mixin to set font size and text alignment */
+@mixin set-font-size-and-text-align($font-size,$text-align){
+  font-size: $font-size;
+  text-align: $text-align;
+}
+
+/*Mixin to set background color and font color*/
+@mixin set-background-color-and-font-color($background-color,$font-color){
+  background-color: $background-color;
+  color: $font-color;
+}
+
+/* Mixin to set font size and font color*/
+@mixin set-font-size-and-font-color($font-size,$font-color){
+  font-size: $font-size;
+  color: $font-color;
+}
+
+/* This mixin sets the background color and padding of an element*/
+@mixin set-background-color-and-padding($background-color,$padding){
+  background-color: $background-color;
+  padding: $padding;
+}
+
+/* Mixin to set background color and border radius */
+@mixin set-background-color-and-border-radius($background-color,$border-radius){
+  background-color: $background-color;
+  border-radius: $border-radius;
+}
+
+/*Mixin to set flex direction and justification*/
+@mixin set-flex-direction-and-justify-content($flex-direction,$justify-content){
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+}
+
+/* Mixin that applies the flexbox property and modifies the value of the align property */
+@mixin flex-align($align){
+  display: flex;
+  align-items: $align;
+}
+
+/* Mixin to set background color and border radius*/
+@mixin set-background-color-and-border-radius($background-color, $border-radius){
+  background-color: $background-color;
+  border-radius: $border-radius;
+}
